@@ -1,0 +1,57 @@
+CARA MEMASANG APLIKASI LPJ BOP RA DI HP (IKON DI LAYAR DEPAN)
+
+Isi folder ini (semua file harus diunggah bersama, jangan diubah namanya):
+  index.html              aplikasinya
+  manifest.webmanifest    nama & ikon aplikasi
+  sw.js                   agar aplikasi tetap terbuka tanpa internet
+  icon-*.png, apple-touch-icon.png   logo untuk layar depan HP
+(logo.svg dan logo-maskable.svg hanya file sumber logo, boleh ikut diunggah)
+
+------------------------------------------------------------------
+PILIHAN A - NETLIFY DROP (paling mudah, gratis, tanpa coding)
+------------------------------------------------------------------
+1. Di komputer, buka https://app.netlify.com/drop
+2. Daftar/masuk (bisa pakai akun Google).
+3. Seret (drag) FOLDER "web_pwa" ini ke kotak di halaman tersebut.
+4. Tunggu sebentar, Netlify memberi alamat seperti
+   https://nama-acak.netlify.app  (bisa diganti di Site settings >
+   Change site name, misalnya https://lpj-bop-ra-anda.netlify.app).
+5. Bila nanti ada versi aplikasi baru: buka situs Anda di Netlify >
+   Deploys > seret lagi folder web_pwa yang baru.
+
+------------------------------------------------------------------
+PILIHAN B - GITHUB PAGES (gratis)
+------------------------------------------------------------------
+1. Buat akun di https://github.com lalu buat repository baru
+   (misalnya "lpj-bop-ra"), pilih Public.
+2. Klik "Add file" > "Upload files", unggah SEMUA file di folder ini,
+   lalu "Commit changes".
+3. Buka Settings > Pages > Source: "Deploy from a branch",
+   Branch: main, folder: / (root) > Save.
+4. Setelah 1-2 menit alamatnya tampil, misalnya
+   https://namaakun.github.io/lpj-bop-ra/
+
+------------------------------------------------------------------
+MEMASANG DI HP
+------------------------------------------------------------------
+Android (Chrome):
+  Buka alamat situs > menu titik tiga > "Instal aplikasi" atau
+  "Tambahkan ke layar utama". Ikon LPJ BOP RA muncul di layar depan
+  dan aplikasi terbuka layar penuh.
+iPhone (Safari):
+  Buka alamat situs > tombol Bagikan (kotak panah ke atas) >
+  "Tambah ke Layar Utama" > Tambah.
+
+------------------------------------------------------------------
+PENTING
+------------------------------------------------------------------
+- Data tersimpan di masing-masing perangkat/browser. Data di HP TIDAK
+  otomatis sama dengan data di komputer. Untuk memindahkan data:
+  menu 9 "Unduh Excel" > "Unduh cadangan" di perangkat asal, lalu
+  "Pulihkan dari file" di perangkat tujuan.
+- Setelah dibuka sekali dengan internet, aplikasi tetap bisa dibuka
+  tanpa internet.
+- Alamat situs bisa dibuka siapa saja yang mengetahuinya, tetapi data
+  RA Anda tidak ikut terunggah: data hanya tersimpan di perangkat Anda.
+- File Excel hasil unduhan di HP tersimpan di folder Download dan bisa
+  dibuka dengan aplikasi Excel/WPS di HP.
